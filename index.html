@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
-  <title>UCM MARVEL</title>
+	<link rel="icon" href="img/logos/MarvelLogo.svg">
+  <title>MARVEL</title>
 
   <!-- Custom fonts for this theme -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -35,16 +35,16 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Universo Marvel</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#universo">Universo Marvel</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Vengadores</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#vengadores">Vengadores</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#ironman">Iron Man</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Hugo</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#yo">Hugo</a>
           </li>
         </ul>
       </div>
@@ -58,20 +58,20 @@
     </video>
     <div class="container h-100">
       <div class="d-flex h-100 text-center align-items-center">
-        <!-- <div class="w-100 text-white">
-          <h1 class="display-3">Video Header</h1>
-          <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>
-        </div> -->
+        <div class="w-100 text-white">
+          <h1 class="display-6">“ Las segundas oportunidades no se presentan muy seguido. La próxima vez que creas que estás ante una te sugiero que le prestes mucha atención. ”</h1>
+          <p class="lead mb-0">- Hank Pym -</p>
+        </div>
       </div>
     </div>
   </header>
 
   <!-- Portfolio Section -->
-  <section class="page-section portfolio" id="portfolio">
+  <section class="page-section portfolio" id="universo">
     <div class="container">
 
       <!-- Portfolio Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Universo MARVEl</h2>
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">UNIVERSO MARVEL</h2>
 
       <!-- Icon Divider -->
       <div class="divider-custom">
@@ -121,6 +121,20 @@
           </div>
         </div>
 
+
+
+        <!-- Portfolio Item 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+            <!-- <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div> -->
+            <img class="img-fluid" src="img/logos/cake.png" alt="">
+          </div>
+        </div>
+
         <!-- Portfolio Item 4 -->
         <div class="col-md-6 col-lg-4">
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
@@ -129,22 +143,9 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <div style="background-color: black; width: 368px; height: 267; align-content: center;">
-
+            <div class="netflix">
               <img class="img-fluid" src="img/logos/netflix-1.svg" alt="">
             </div>
-          </div>
-        </div>
-
-        <!-- Portfolio Item 5 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/safe.png" alt="">
           </div>
         </div>
 
@@ -167,7 +168,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="page-section" id="contact">
+  <section class="page-section" id="vengadores">
     <div class="container">
 
       <!-- Contact Section Heading -->
@@ -177,7 +178,7 @@
       <div class="divider-custom">
         <div class="divider-custom-line"></div>
         <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
+          <img src="img/logos/avengers.png" style="width: 38px; height: 39px;" alt="">
         </div>
         <div class="divider-custom-line"></div>
       </div>
@@ -282,24 +283,99 @@
 
       <!-- Contact Section Heading -->
       <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Iron Man</h2>
+      <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <img src="img/logos/mask.png" style="width: 25px; height: 36px;" alt="">
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
 
-     
+      <button class="tablink" onclick="openPage('Home', this, 'black')" id="defaultOpen">TONY STARK</button>
+      <button class="tablink" onclick="openPage('News', this, 'black')">IRON MAN</button>
+      <button class="tablink" onclick="openPage('Contact', this, 'black')">INTELIGENCIA ARTIFICIAL</button>
+      <button class="tablink" onclick="openPage('About', this, 'black')">About</button>
+
+      <div id="Home" class="tabcontent">
+        <div class="sobre">
+          <div class="overlay"></div>
+         <img src="img/iron man/tony.jpg" alt="">
+          <div class="container h-100s">
+            <div class="d-flex h-100s text-left align-items-center">
+              <div class="w-100s text-white texto">
+                <p class="leads mb-0">Tony Stark</p>
+                <h5 class="display-9">Genio, Multimillonario, Playboy, Filántropo. La confianza de Tony Stark solo se corresponde con sus habilidades de alto vuelo como el héroe llamado Iron Man.</h5>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+
+      <div id="News" class="tabcontent">
+        <div class="sobre">
+          <div class="overlay"></div>
+         <img src="img/iron man/2.jpg" alt="">
+          <div class="container h-100s">
+            <div class="d-flex h-100s text-left align-items-center">
+              <div class="w-100s text-white texto">
+                <p class="leads mb-0">IRON MAN</p>
+                <h5 class="display-9">El inventor Tony Stark aplica su genio para soluciones de alta tecnología a problemas como Iron Man, el Avenger blindado.</h5>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+
+      <div id="Contact" class="tabcontent">
+        <div class="sobre">
+          <div class="overlay"></div>
+         <img src="img/iron man/jarvis.jpg" alt="">
+          <div class="container h-100s">
+            <div class="d-flex h-100s text-left align-items-center">
+              <div class="w-100s text-white texto">
+                <p class="leads mb-0">J.A.R.V.I.S</p>
+                <h5 class="display-9">Un sistema de inteligencia artificial a bordo, originalmente J.A.R.V.I.S, luego reemplazado por V.I.E.R.N.E.S, ayuda a Tony a controlar su armadura y conectarse a otros sistemas.</h5>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+
+      <div id="About" class="tabcontent">
+        <div class="sobre">
+          <div class="overlay"></div>
+         <img src="img/iron man/frase.jpg" alt="">
+         <div class="container h-100">
+          <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+              <h1 class="display-6">“ Puedes tomar mi casa, todos mis trucos y juguetes. Una cosa que no puedes quitarme... Yo soy Iron Man. "</h1>
+              <!-- <p class="lead mb-0">- Hank Pym -</p> -->
+            </div>
+          </div>
+        </div>
+        </div> 
+      </div>
+
 
     </div>
   </section>
 
+
+
+
    <!-- About Section -->
-   <section class="page-section bg-primary text-white mb-0" id="about">
+   <section class="page-section colorback text-white mb-0" id="yo">
     <div class="container">
 
       <!-- About Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-white">Hugo</h2>
+      <h2 class="page-section-heading text-center text-uppercase text-white">HUGO GUERRERO</h2>
 
       <!-- Icon Divider -->
       <div class="divider-custom divider-light">
         <div class="divider-custom-line"></div>
         <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
+          <i class="fas fa-chevron-down"></i>
         </div>
         <div class="divider-custom-line"></div>
       </div>
@@ -307,25 +383,41 @@
       <!-- About Section Content -->
       <div class="row">
         <div class="col-lg-4 ml-auto">
-          <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+          <h3 style="color: transparent;">.</h3>
+          <p class="lead">Soy Hugo Alberto Guerrero San Miguel, tengo 22 años, estoy estudiando Tecnologias </p>
         </div>
         <div class="col-lg-4 mr-auto">
-          <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+          <h3>Que me gusta</h3>
+          <p class="lead">Musica</p>
+          <p></p>
+          <iframe src="https://open.spotify.com/embed/playlist/5Ui889lKgtSJpCMIund6lH" width="274" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <p></p>
+          <iframe src="https://open.spotify.com/embed/playlist/5uN3NpGSIRuu3U5GH2j29D" width="274" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class="col-lg-4 mr-auto">
+          <h3 style="color: transparent;">.</h3>
+          <P class="lead">Deportes</P>
+          <p></p>
+          <p>&#8226; Voleibol</p>
+          <p>&#8226; Béisbol</p>
+          <p>&#8226; Futbol</p>
         </div>
       </div>
 
       <!-- About Section Button -->
       <div class="text-center mt-4">
-       <!-- <img src="img/logos/logo marvel.jpg" style="he" alt=""> -->
+       <!-- <img src="img/log" alt=""> -->
       </div>
 
     </div>
   </section>
 
+  <br>
+
 
   <!-- Copyright Section -->
   <section class="copyright py-4 text-center text-white">
-    <div class="container">
+    <div class="container" style="margin-top: -10px;">
       <div class="row">
 
         <!-- Footer Location -->
@@ -358,8 +450,18 @@
           <p class="lead mb-0">Freelance is a free to use, MIT licensed Bootstrap theme created by
             <a href="http://startbootstrap.com">Start Bootstrap</a>.</p> -->
         </div>
+
+        <div>
+
+        </div>
+    </div>
+    <br>
+    <div class="container" style="margin-bottom: -20px; margin-top: -20px;">
+      <small>Create &hearts; by Hugo Guerrero</small>
     </div>
   </section>
+
+
 
 
   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
@@ -442,18 +544,14 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 
-                <!-- Portfolio Modal - Image -->
-                
-                
                 <p class="mb-5">El Universo Cinematográfico de Marvel (UCM) es un universo compartido creado por Marvel Studios, designado como la Tierra-199999 dentro del multiverso de Marvel. El universo está principalmente compuesto por películas realizadas de manera independiente por Marvel Studios que siempre se encuentran dentro de esta misma realidad, al igual que Marvel como ha hecho con sus cómics.
                 </p>
                
-            
+                <img class="img-fluid rounded mb-5" src="img/logos/endgame.jpg" alt="">
 
-                <!-- Portfolio Modal - Text -->
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
-                  Close Window
+                  Cerrar
                 </button>
               </div>
             </div>
@@ -477,7 +575,7 @@
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">MARVEL COMICS</h2>
                 <!-- Icon Divider -->
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
@@ -486,13 +584,15 @@
                   </div>
                   <div class="divider-custom-line"></div>
                 </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/cake.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                
+                <p class="mb-5">El Universo Cinematográfico de Marvel (UCM) es un universo compartido creado por Marvel Studios, designado como la Tierra-199999 dentro del multiverso de Marvel. El universo está principalmente compuesto por películas realizadas de manera independiente por Marvel Studios que siempre se encuentran dentro de esta misma realidad, al igual que Marvel como ha hecho con sus cómics.
+                </p>
+               
+                <img class="img-fluid rounded mb-5" src="img/logos/comic.jpg" alt="">
+
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
-                  Close Window
+                  Cerrar
                 </button>
               </div>
             </div>
@@ -516,7 +616,7 @@
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">DISNEY PLUS</h2>
                 <!-- Icon Divider -->
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
@@ -525,52 +625,15 @@
                   </div>
                   <div class="divider-custom-line"></div>
                 </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/circus.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Close Window
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+                
+                <p class="mb-5">Poco a poco, empiezan a conocerse detalles de los planes de Marvel en Disney Plus. El presidente de Disney, Bob Iger, informó el martes 4 de febrero, en un encuentro con inversionistas, que la compañía tiene siete shows en desarrollo en la plataforma de streaming, sin contar las tres series que ya cuentan con fecha de estreno y de la que se mostraron sus primeras imágenes en un teaser lanzado durante el Super Bowl LIV.
+                </p>
+               
+                <img class="img-fluid rounded mb-5" src="img/logos/marvel-disney-plus.png" alt="">
 
-  <!-- Portfolio Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/game.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
-                  Close Window
+                  Cerrar
                 </button>
               </div>
             </div>
@@ -604,12 +667,55 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/safe.png" alt="">
+                <div style="background-color: white;">
+
+                </div>
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">NETFLIX</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                
+                <p class="mb-5">Con varias temporadas ya estrenadas de las series de Marvel en Netflix, es hora de hacer un repaso. Ya tenemos éxitos, otras no tan geniales y algunas que se redimieron con el tiempo. Daredevil rompió todos los esquemas, pero aún falta mucho por ver de Jessica Jones, Iron Fist y Luke Cage. Además de los spin offs que encontramos por el camino. Verlas desde el comienzo no es tarea fácil pero seguro que es gratificante.
+                </p>
+               
+                <img class="img-fluid rounded mb-5" src="img/logos/netflixseries.jpg" alt="">
+
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Cerrar
                 </button>
               </div>
             </div>
@@ -672,6 +778,24 @@
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
 
+  <script>
+    function openPage(pageName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
 </body>
 
 </html>
